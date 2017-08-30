@@ -15,6 +15,7 @@ id - 64 bit integer
 name - varchar
 
 
+
 Для запуска приложения на локальном компьетере необходимо создать в PostgreSQL БД "helloBackEnd", скачать данный репозиторий, в файле /resources/application.yml изменить username и password для доступа к созданной локальной базе, подключить ваше IDE к БД "helloBackEnd", запустить Spring Boot 1.4.1.
 
 Примеры запросов  
