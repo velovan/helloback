@@ -22,7 +22,8 @@ public class ContactController {
     private final Logger log = LoggerFactory.getLogger(ContactController.class);
 
     private final ContactService service;
-
+    private long maxVal = 1000000;
+    
     @Autowired
     public ContactController(ContactService service) {
         this.service = service;
@@ -35,16 +36,14 @@ public class ContactController {
             @RequestParam(name = "lastId", required = false) Long lastId,
             @RequestParam(name = "limit", required = false) Integer limit) {
 
-    	     if (limit != null && limit > 35) {
-             log.info("Bad request, limit > default");
-             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-             }
+    	 if (limit <= 0|| limit.equals("")) {
+            log.info("Bad request, limit > default");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
 
-    	  long lastIdParam = lastId == null ? 0 : lastId;
-         // int limitParam = limit == null ? 35 : limit;
-           int limitParam = limit;
- 
-	    
+    	long lastIdParam = lastId == null ? 0 : lastId;
+        int limitParam = (int) (limit == null ? maxVal : limit);
+
         List<Contact> contacts = service.getFilteredContacts(regex, forward, lastIdParam, limitParam);
 
         if (contacts.isEmpty()) {
