@@ -1,6 +1,6 @@
 # HelloBackEnd
 
-
+[![Build Status](https://travis-ci.org/velovan/hellorest.svg?branch=master)](https://travis-ci.org/velovan/hellorest)
 
 
 Сервис - Spring Boot 1.4.1.  
