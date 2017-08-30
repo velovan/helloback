@@ -41,8 +41,10 @@ public class ContactController {
              }
 
     	  long lastIdParam = lastId == null ? 0 : lastId;
-          int limitParam = limit == null ? 35 : limit;
-
+         // int limitParam = limit == null ? 35 : limit;
+           int limitParam = limit;
+ 
+	    
         List<Contact> contacts = service.getFilteredContacts(regex, forward, lastIdParam, limitParam);
 
         if (contacts.isEmpty()) {
