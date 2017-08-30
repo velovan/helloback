@@ -1,0 +1,17 @@
+language: java
+jdk:
+  - oraclejdk8
+
+env:
+  - DB=pgsql
+
+services:
+  - postgresql
+
+addons:
+    postgresql: "9.4"
+
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database "helloBackEnd";' -U postgres
+  - psql -c "create user postgress with password 'aaccss';" -U postgres

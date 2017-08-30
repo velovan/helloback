@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/helloBackEnd
+    username: postgres
+    password: aaccss
+    driver-class-name: org.postgresql.Driver
+    tomcat:
+      max-wait: 10000
+      max-active: 100
+      max-idle: 30
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: debug
+
