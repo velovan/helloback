@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/velovan/hellorest.svg?branch=master)](https://travis-ci.org/velovan/hellorest)
 
+[![Build Status](https://travis-ci.org/velovan/helloback.svg?branch=master)](https://travis-ci.org/velovan/helloback)
 
 Сервис - Spring Boot 1.4.1.  
 SQL БД -  PostgreSQL 9.6.4-1.  
