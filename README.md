@@ -1,7 +1,7 @@
 # HelloBackEnd
 
 
-[![Build Status](https://travis-ci.org/velovan/wereo.svg?branch=master)](https://travis-ci.org/velovan/wereo)
+
 
 Сервис - Spring Boot 1.4.1.  
 SQL БД -  PostgreSQL 9.6.4-1.  
