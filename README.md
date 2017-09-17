@@ -1,6 +1,6 @@
 # HelloBackEnd
 
-RestHub was designed to provide a way to access data from the client application through RESTful API.
+helloback was designed to provide a way to access data from the client application through RESTful API.
 
 [![Build Status](https://travis-ci.org/velovan/helloback.svg?branch=master)](https://travis-ci.org/velovan/helloback)
 
