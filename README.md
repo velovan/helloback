@@ -12,7 +12,7 @@ Project uses the following technologies:
 • Maven.  
 • Eclipse IDE
 
-Create database helloBackEnd. Change password/username in application.yml file.
+Create database helloBackEnd. Change password/username in application.yml.
 The table has two fields:
 id - 64 bit integer
 name - varchar
