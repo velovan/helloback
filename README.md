@@ -6,7 +6,7 @@
 Project uses the following technologies:
 
 
-
+• PostgreSQL 9.6.4-1.
 • Spring Boot 1.4.1.  
 • PostgreSQL 9.6.4-1.  
 • Maven.  
