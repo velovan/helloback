@@ -3,10 +3,12 @@
 
 [![Build Status](https://travis-ci.org/velovan/helloback.svg?branch=master)](https://travis-ci.org/velovan/helloback)
 
-Сервис - Spring Boot 1.4.1.  
-SQL БД -  PostgreSQL 9.6.4-1.  
-Сборка - Maven.  
-Среда  - Eclipse IDE
+Project uses the following technologies:
+•	Java JDK 1.8
+• Spring Boot 1.4.1.  
+• PostgreSQL 9.6.4-1.  
+• Maven.  
+• Eclipse IDE
 
 
 Для работы приложения необходима БД helloBackEnd. Настройки доступа расположены в файле /resources/application.yml.
