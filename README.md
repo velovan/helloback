@@ -7,7 +7,6 @@ Project uses the following technologies:
 
 
 •	Java JDK 1.8
-
 • Spring Boot 1.4.1.  
 • PostgreSQL 9.6.4-1.  
 • Maven.  
