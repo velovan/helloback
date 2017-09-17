@@ -18,7 +18,6 @@ id - 64 bit integer
 name - varchar
 
 
-
 Go to the browser and enter the following URL: 
 
 [http://localhost:8080/hello/contacts?nameFilter=^A.\*$&forward=true&lastId=0&limit=5](http://localhost:8080/hello/contacts?nameFilter=^A.\*$&forward=true&lastId=0&limit=5)
