@@ -12,7 +12,7 @@ Project uses the following technologies:
 • Maven.  
 • Eclipse IDE
 
-Create database helloBackEnd. Change password/username in application.yml.
+Create database helloBackEnd. You need to change the username and password of PostgreSQL in src/main/resources/application.yml file.
 The table has two fields:
 id - 64 bit integer
 name - varchar
