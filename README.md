@@ -11,7 +11,7 @@ Project uses the following technologies:
 • PostgreSQL 9.6.4-1.  
 • Maven.  
 • Eclipse IDE
-•	Java JDK 1.8
+• Eclipse IDE
 
 Для работы приложения необходима БД helloBackEnd. Настройки доступа расположены в файле /resources/application.yml.
 Таблица contacts имеет два поля
