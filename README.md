@@ -1,10 +1,10 @@
 # HelloBackEnd
 
+RestHub was designed to provide a way to access data from the client application through RESTful API.
 
 [![Build Status](https://travis-ci.org/velovan/helloback.svg?branch=master)](https://travis-ci.org/velovan/helloback)
 
 Project uses the following technologies:
-
 
  
 • Spring Boot 1.4.1.  
@@ -12,9 +12,10 @@ Project uses the following technologies:
 • Maven.  
 • Eclipse IDE
 
+Create database helloBackEnd
 
 Для работы приложения необходима БД helloBackEnd. Настройки доступа расположены в файле /resources/application.yml.
-Таблица contacts имеет два поля
+The table has two fields:
 id - 64 bit integer
 name - varchar
 
