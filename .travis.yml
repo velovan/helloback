@@ -15,3 +15,4 @@ before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database "helloBackEnd";' -U postgres
   - psql -c "create user postgress with password 'aaccss';" -U postgres
+
