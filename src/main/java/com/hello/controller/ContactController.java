@@ -50,8 +50,8 @@ public class ContactController {
             log.info("Contacts Not Found");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
         log.info("Get filtered contacts");
-		return new ResponseEntity<>(contacts, HttpStatus.OK);
+	    
+	   return new ResponseEntity<>(contacts, HttpStatus.OK);
 	}
 }
