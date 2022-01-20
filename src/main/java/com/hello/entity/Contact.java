@@ -3,7 +3,6 @@ package com.hello.entity;
 public class Contact {
 
     private long id;
-
     private String name;
 
     public Contact() {
