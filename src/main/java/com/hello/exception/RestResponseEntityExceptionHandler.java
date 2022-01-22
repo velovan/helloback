@@ -20,19 +20,19 @@ import java.util.regex.PatternSyntaxException;
 public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
-    protected ResponseEntity<Object> handleNoHandlerFoundException(NoHandlerFoundException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+    protected ResponseEntity<Object> handleNoHandlerFoundException(NoHandlerFoundException ex, HttpHeaders headers, HttpStatus status, WebRequest request){
         String error = "No handle found for " + ex.getHttpMethod() + " " + ex.getRequestURL();
         return new ResponseEntity<>(error, new HttpHeaders(), HttpStatus.NOT_FOUND);
     }
 
     @Override
-    protected ResponseEntity<Object> handleHttpMediaTypeNotAcceptable(HttpMediaTypeNotAcceptableException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+    protected ResponseEntity<Object> handleHttpMediaTypeNotAcceptable(HttpMediaTypeNotAcceptableException ex, HttpHeaders headers, HttpStatus status, WebRequest request){
         String error = "media type is not supported";
         return new ResponseEntity<>(error, new HttpHeaders(), HttpStatus.UNSUPPORTED_MEDIA_TYPE);
     }
 
     @Override
-    protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+    protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request){
         String error = ex.getMethod() + " not supported";
         return new ResponseEntity<>(error, new HttpHeaders(), HttpStatus.METHOD_NOT_ALLOWED);
     }
@@ -44,19 +44,19 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
     }
 
     @ExceptionHandler({ PatternSyntaxException.class })
-    public ResponseEntity<Object> handlePatternSyntax(PatternSyntaxException ex, WebRequest request) {
+    public ResponseEntity<Object> handlePatternSyntax(PatternSyntaxException ex, WebRequest request){
         String error = "Regex" + ex.getPattern() + " is incorrect";
         return new ResponseEntity<>(error, new HttpHeaders(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler({MethodArgumentTypeMismatchException.class})
-    public ResponseEntity<Object> handleMethodArgumentTypeMismatch(MethodArgumentTypeMismatchException ex, WebRequest request) {
+    public ResponseEntity<Object> handleMethodArgumentTypeMismatch(MethodArgumentTypeMismatchException ex, WebRequest request){
         String error = ex.getName() + " should be of type " + ex.getRequiredType();
         return new ResponseEntity<>(error, new HttpHeaders(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler({BlankNameFilterException.class})
-    public ResponseEntity<Object> handleBlankNameFilterException(BlankNameFilterException ex, WebRequest request) {
+    public ResponseEntity<Object> handleBlankNameFilterException(BlankNameFilterException ex, WebRequest request){
         return new ResponseEntity<>("nameFilter should not be blank", new HttpHeaders(), HttpStatus.BAD_REQUEST);
     }
 
