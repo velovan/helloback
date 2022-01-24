@@ -48,16 +48,16 @@ public class ContactRepositoryImpl implements ContactRepository {
             }
             result.close();
             statement.close();
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             e.printStackTrace();
-        } finally {
+        }finally {
             try {
-                if (result != null) result.close();
-                if (connection != null) connection.close();
-            } catch (SQLException e) {
+              if (result != null) result.close();
+              if (connection != null) connection.close();
+            }catch (SQLException e) {
                 e.printStackTrace();
-            }
+             }
+          }
+	      return contacts;
         }
-		return contacts;
-	}
 }
