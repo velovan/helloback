@@ -10,18 +10,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-class ContactServiceImpl implements ContactService {
+class ContactServiceImpl implements ContactService{
 
 	private final ContactRepository repository;
 
 	@SuppressWarnings("SpringJavaAutowiringInspection")
 	@Autowired
-	public ContactServiceImpl(ContactRepository repository) {
-		this.repository = repository;
+	public ContactServiceImpl(ContactRepository repository){
+	    this.repository = repository;
 	}
 
 	@Override
 	public List<Contact> getFilteredContacts(String regex, boolean forward, long lastId, int limit) {
-		return repository.getFilteredContacts(regex, forward, lastId, limit).stream().sorted((o1, o2) -> ((int) (o1.getId() - o2.getId()))).collect(Collectors.toList());
+	    return repository.getFilteredContacts(regex, forward, lastId, limit).stream().sorted((o1, o2) -> ((int) (o1.getId() - o2.getId()))).collect(Collectors.toList());
 	}
 }
