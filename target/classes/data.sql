@@ -32,3 +32,4 @@ INSERT INTO contacts (name) VALUES ('Grigoriy2');
 INSERT INTO contacts (name) VALUES ('Petrov2');
 INSERT INTO contacts (name) VALUES ('Ivanov2');
 INSERT INTO contacts (name) VALUES ('Vasechkin2');
+
