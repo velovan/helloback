@@ -14,7 +14,6 @@ import static io.restassured.RestAssured.when;
 public class ContactControllerTest {
 
     private final String url = "http://localhost:8888/hello/contacts?nameFilter=";
-
     private final String contentType = "application/json;charset=UTF-8";
 
     @Test
@@ -57,4 +56,5 @@ public class ContactControllerTest {
         when().get(url + "^.*$&forward=true")
               .then().statusCode(404);
     }
+ 
 }
